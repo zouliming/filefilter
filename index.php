@@ -127,15 +127,6 @@ function getMaxVersion($reversionFiles){
             font-family: Microsoft yahei;
         }
     </style>
-    <script src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-        google.load("jquery","1.7.1");
-    </script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#input").focus();
-		});
-    </script>
 </head>
 <body>
 <div id="container">
@@ -219,6 +210,9 @@ function getMaxVersion($reversionFiles){
             return document.defaultView.getComputedStyle(obj, null)[propprop];
         }
         return null;
+    }
+    window.onload = function(){
+        document.getElementById("input").focus();
     }
 </script>
 </body>
